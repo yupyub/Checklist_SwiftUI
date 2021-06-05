@@ -7,13 +7,35 @@
 
 import SwiftUI
 
+struct ChecklistItem {
+    var name : String
+    var isChecked : Bool = false
+}
+
 struct ContentView: View {
-    @State var checklistItems = ["Walk the dog","Brush my teeth","Learn IOS development","Soccer practice","Eat Ice cream"]
+    //@State var checklistItems = ["Walk the dog","Brush my teeth","Learn IOS development","Soccer practice","Eat Ice cream"]
+    @State var checklistItems = [
+        ChecklistItem(name: "Walk the dog"),
+        ChecklistItem(name: "Brush my teeth"),
+        ChecklistItem(name: "Learn IOS development", isChecked: true),
+        ChecklistItem(name: "Soccer practice"),
+        ChecklistItem(name: "Eat Ice cream", isChecked: true),
+    ]
     var body: some View {
         NavigationView{
             List{
-                ForEach(checklistItems, id: \.self){
-                    item in Text(item)
+                ForEach(checklistItems, id: \.self.name){
+                    checklistItem in
+                    HStack{
+                        Text(checklistItem.name)
+                        Spacer()
+                        if checklistItem.isChecked {
+                            Text("☑️")
+                        }
+                        else{
+                            Text("⬛️")
+                        }
+                    }
                 } // End of ForEach
                 .onDelete(perform: deleteListItem)
                 .onMove(perform: moveListItem)
