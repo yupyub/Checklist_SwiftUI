@@ -14,6 +14,7 @@
 		5050535D2660DB9000D361B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5050535C2660DB9000D361B7 /* Preview Assets.xcassets */; };
 		505053602660DB9000D361B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5050535E2660DB9000D361B7 /* LaunchScreen.storyboard */; };
 		50646110266BB6D3009A14C7 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064610F266BB6D3009A14C7 /* ChecklistItem.swift */; };
+		50646114266BB78C009A14C7 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50646113266BB78C009A14C7 /* Checklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5050535F2660DB9000D361B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505053612660DB9000D361B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5064610F266BB6D3009A14C7 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		50646113266BB78C009A14C7 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				505053552660DB8F00D361B7 /* SceneDelegate.swift */,
 				505053572660DB8F00D361B7 /* ChecklistView.swift */,
 				5064610F266BB6D3009A14C7 /* ChecklistItem.swift */,
+				50646113266BB78C009A14C7 /* Checklist.swift */,
 				505053592660DB9000D361B7 /* Assets.xcassets */,
 				5050535E2660DB9000D361B7 /* LaunchScreen.storyboard */,
 				505053612660DB9000D361B7 /* Info.plist */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50646114266BB78C009A14C7 /* Checklist.swift in Sources */,
 				505053542660DB8F00D361B7 /* AppDelegate.swift in Sources */,
 				505053562660DB8F00D361B7 /* SceneDelegate.swift in Sources */,
 				505053582660DB8F00D361B7 /* ChecklistView.swift in Sources */,
